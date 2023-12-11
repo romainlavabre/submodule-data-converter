@@ -9,6 +9,8 @@ public class Formatter {
             return null;
         }
 
+        phone = phone.replaceAll( " ", "" );
+
         if ( phone.startsWith( "+" ) && phone.length() >= 12 && phone.length() <= 16 ) {
             return phone;
         }
@@ -20,7 +22,7 @@ public class Formatter {
         }
 
         if ( phone.startsWith( "0" ) ) {
-            return phone.replaceFirst( "^0", "+33" ).replaceAll( " ", "" );
+            return phone.replaceFirst( "^0", "+33" );
         }
 
         return phone.replaceAll( " ", "" );
