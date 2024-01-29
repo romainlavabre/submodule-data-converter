@@ -1,3 +1,4 @@
+1.0.3: FIX Formatter.phone, point removing
 1.0.2: FIX Formatter.phone, space removing
 1.0.1: ADD method Cast.getInt
 1.0.0: fairfair-cloud/roadmap#16

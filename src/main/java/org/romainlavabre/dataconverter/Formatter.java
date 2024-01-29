@@ -9,7 +9,7 @@ public class Formatter {
             return null;
         }
 
-        phone = phone.replaceAll( " ", "" );
+        phone = phone.replaceAll( " ", "" ).replaceAll( "\\.", "" );
 
         if ( phone.startsWith( "+" ) && phone.length() >= 12 && phone.length() <= 16 ) {
             return phone;

@@ -15,4 +15,16 @@ public class FormatterTest {
     public void test2() {
         Assert.assertEquals( "+33641825412", Formatter.phone( "+336 418   25412" ) );
     }
+
+
+    @Test
+    public void test3() {
+        Assert.assertEquals( "+33641825412", Formatter.phone( "+336.41.82.54.12" ) );
+    }
+
+
+    @Test
+    public void test4() {
+        Assert.assertEquals( "+33641825412", Formatter.phone( "+336.41 .82 .54.1  2" ) );
+    }
 }
